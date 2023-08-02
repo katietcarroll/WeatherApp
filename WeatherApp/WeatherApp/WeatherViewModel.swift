@@ -42,7 +42,7 @@ final class WeatherViewModel: ObservableObject {
     
     func getCoordUrl(completion: @escaping (URL) -> Void) {
         let coordBaseUrl = "https://api.openweathermap.org/geo/1.0/direct"
-        let apiKey = "75dc3ad564ad0eebf79a36e8d462498e"
+        let apiKey = ## ENTER API KEY HERE
         var coordComponents = URLComponents(string: coordBaseUrl)
         coordComponents?.queryItems = [
             URLQueryItem(name: "q", value: textFieldValue),
